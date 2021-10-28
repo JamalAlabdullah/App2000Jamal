@@ -1,0 +1,281 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {/*grid*/
+    width: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px auto 100px;
+    grid-template: 
+    "h h h"/*grid-area for Header*/
+    "m m m"/*grid-area for innhold*/
+    "f f f";/*grid-area for Footer*/
+    font-family: "Times New Roman", sans-serif, Helvetica, Arial;
+    
+}
+header{
+    grid-area: h;
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    z-index: +1;
+}
+main{
+    position: absolute;
+    width: 100%;
+
+    
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    
+}
+
+footer p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+video, #video_bilde{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+
+    
+    
+}
+/*************header*************/
+
+#hamIcone{
+
+    height: 17px;
+    top: 25px;
+    position: fixed;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgb(54, 54, 54);
+    cursor: pointer;
+    background-color:  rgb(54, 54, 54);
+    width: 18px;
+    border: none;
+}
+#logo_container{
+    top: 15px;
+    position: fixed;
+    padding: 4px;
+    left: 15px;
+}
+#logo{
+    display: block;
+    width: 50px;
+    position: relative;
+    transform: rotate(45deg);
+
+  }
+  #logoText{
+    position: absolute;
+    font-family: Cursive, "Times New Roman", Times, serif;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      margin: 0 -5px;
+  }
+
+
+ 
+#logollll a{
+    position: fixed;
+    padding: 25px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+
+
+#hamIcone{ /*hamburger icone*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    right: 20px;
+}
+
+.Ugyeldig{
+    color: red;
+}
+
+
+#hamlinje1, #hamlinje2, #hamlinje3{ /*hamburger icon linjer*/
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: 0.8s;
+}
+
+.linje1{ /*hamburger icon linjer rotate*/
+    transform: rotate(-45deg) translate(-3.8px, 4px);
+}
+.linje2{
+    opacity: 0;
+}
+.linje3{
+    transform: rotate(45deg) translate(-3.8px, -4px);
+
+}
+
+#navBarUl{
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    left: 3%;
+}
+
+.visible{
+    visibility: visible;
+}
+.hidden{
+    visibility: hidden;
+}
+
+#navBarUl li, #userinfo{
+    list-style: none; 
+    margin: 0 90px 10px 90px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgb(54, 54, 54);
+    border: none;
+    
+}
+
+#navBarUl li a, #userinfo a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(54, 54, 54);
+    border-radius: 3px;
+    padding: 4px 0;
+    
+}
+
+#userinfo_container{
+    top: 25px;
+    position: fixed;
+    width: 100%;
+    left: 3%;
+}
+
+
+#feilMelding, #melding{
+    background-color: rgb(204, 48, 48);
+    border-color: rgb(204, 48, 48);
+    color: rgba(255, 255, 255);
+    margin-bottom: 20px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgb(54, 54, 54);
+  }
+
+#melding{
+    background-color: rgb(30, 126, 10);
+    border-color: rgb(30, 126, 10);
+    color: rgba(255, 255, 255);
+}
+
+/*************hover*************/
+
+#hamIcone:hover, #search_button:hover, .search_bar:hover,
+#navBarUl li a:hover, #userinfo a:hover{
+    background-color:rgb(30, 126, 10);
+    transition: 0.5s;
+}
+
+
+
+
+
+@media screen and (min-width: 700px) {
+    #hamIcone{ /*Gjemme hamburger icon*/
+        visibility: hidden;
+        width: auto;
+    }
+    .hidden{
+        visibility: visible; 
+    }
+    #search_button{ /*search icon*/
+        right: 20px;
+    }
+    #navBarUl{
+        top: 25px;
+        width: auto;
+        margin-left: 90px;
+        left: 20px;
+    }
+    
+    #navBarUl li{
+        width: auto;
+        float: left;
+        margin: 0 5px;
+
+    }
+    #navBarUl li a{
+        padding: auto;
+        width: 95px;
+    }
+    #userinfo a{
+        padding: 4px 7px;
+        width: auto;
+    }
+
+   
+    #userinfo_container{
+        width: auto;
+        right: 35px;
+        left: auto;
+    }
+    #loggUt_Li{
+        position: fixed;
+        right: 15px;
+    }
+    #regis{
+        position: fixed;
+        right: 120px;
+        top: 25px;
+        width: 50px;
+    
+    }
+    #logoText{
+          margin: 0;
+    }
+    #logo:before, #logo:after {
+    top: 40px;
+    left: 85px;
+
+    }
+    #adminmeny, #adminmeny2{
+        position: fixed;
+        top: 60px;
+    }
+    #adminmeny2{
+        left: 210px;
+    }
+}
+

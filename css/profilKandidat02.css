@@ -1,0 +1,215 @@
+
+
+#video_bilde{
+    position: fixed;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#border, #border_med_feilMelding{
+    position: relative;
+    width: 300px;
+    height: 620px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgb(54, 54, 54);
+    background: rgba(209, 209, 209, 0.5);
+    margin: auto;
+    top: 100px;
+}
+#border_med_feilMelding{
+    height: 650px;
+}
+
+#inputer{
+    margin: 110px 0 0 20px;
+}
+#inputer2{
+    margin: 10px 0 0 20px;
+
+}
+
+#knapper{
+    margin: 20px 0 0 20px;
+}
+
+.label, .innData{
+    display: list-item;
+    list-style: none;
+    margin: 5px 0;
+}
+
+.label{
+    font-weight: bold;
+}
+
+.innData, #submit_knapp, #bytte_knapp, #slette_knapp, #paragraph{
+    margin-bottom: 5px;
+    width: 250px;
+    padding: 3px 5px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgb(54, 54, 54);
+    
+}
+
+
+#submit_knapp,#bytte_knapp, #slette_knapp, #paragraph{
+    background-color: rgb(30, 126, 10);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    float: right;
+    margin-right: 15px;
+
+}
+#submit_knapp:hover,#bytte_knapp:hover, #slette_knapp:hover{
+    background-color: rgb(54, 54, 54);
+    transition: 0.5s;
+}
+#bytte_knapp{
+    position: relative;
+    background-color:rgb(54, 54, 54);
+}
+#bytte_knapp:hover{
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+
+#slette_knapp{
+    position: relative;
+    background-color:rgb(204, 48, 48);
+    right: 150px;
+    top: -45px;
+}
+
+#feilMelding, #melding{
+    position: relative;
+    left: 20px;
+    top: 600px;
+}
+
+#text{
+
+    height: 50px;
+}
+
+#bilde{
+    vertical-align: middle;
+    border-radius: 50%;
+    position: absolute;
+    width: 100px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 10px;
+    height: 100px;
+
+
+
+
+}
+#editbilde, #editbilde_knapp{
+    position: absolute;
+    right: 110px;
+    width: 30px;
+    top: 85px;
+}
+#editbilde_knapp{
+    top: 88px;
+}
+
+
+#editbilde_knapp::before {
+    content: 'sss';
+    padding: 8px 8px;
+    cursor: pointer;
+    font-size: 15pt;
+    opacity: 0;
+  }
+#paragraph{
+    position: absolute;
+    top: 710px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    background-color: rgba(209, 209, 209);
+    border-radius: 5px;
+    width: 270px;
+    padding: 5px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 700px) {
+
+  
+
+    #border, #border_med_feilMelding{
+        width: 600px;
+        height: 500px;
+    }
+
+
+
+    #editbilde, #editbilde_knapp{
+        right: 260px;
+    }
+    
+    #inputer2{
+        position: absolute;
+        top: 105px;
+        right: 15px;
+    }
+    #text{
+
+        height: 68px;
+    }
+
+    #bpass{
+        position: absolute;
+        left: -300px;
+    }
+    #bpassi{
+        position: absolute;
+        left: -300px;
+        top: 300px;
+    }
+
+    #feilMelding, #melding{
+        position: absolute;
+        left: 20px;
+        top: 425px;
+    }
+
+    #paragraph{
+        top: 400px;
+        right: 300px;
+
+    }
+    .innData, #submit_knapp, #bytte_knapp, #slette_knapp, #paragraph{
+        margin-bottom: 20px;
+      
+        padding: 5px;
+        
+
+    }
+    #slette_knapp, #bytte_knapp{
+        margin-top: 25px;
+        left: 125px;
+        }
+        #bytte_knapp{
+            left: 135px;
+
+        }
+}
+

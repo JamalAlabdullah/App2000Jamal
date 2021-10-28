@@ -1,0 +1,85 @@
+main{
+height: 700px;
+}
+
+#video_bilde{
+    position: fixed;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+footer{
+background-color: rgba(0, 0, 0, 0.3);
+}
+
+#border, #border_med_feilMelding{
+    position: relative;
+    width: 300px;
+    height: 440px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgb(54, 54, 54);
+    background: rgba(209, 209, 209, 0.5);
+    margin: auto;
+    top: 100px;
+}
+#border_med_feilMelding{
+    height: 500px;
+}
+
+#inputer{
+    margin: 20px 0 0 20px;
+}
+#knapper{
+    margin: 40px 0 0 20px;
+}
+
+.label, .innData{
+    display: list-item;
+    list-style: none;
+    margin: 5px 0;
+}
+
+.label{
+    font-weight: bold;
+}
+
+.innData, #submit_knapp, #bytte_knapp{
+    margin-bottom: 20px;
+    width: 250px;
+    padding: 5px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgb(54, 54, 54);
+}
+
+
+
+
+#submit_knapp, #bytte_knapp{
+    background-color: rgb(30, 126, 10);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+#bytte_knapp{
+    position: absolute;
+    background-color:rgb(54, 54, 54);
+    left: 20px;
+    
+}
+#submit_knapp:hover, #bytte_knapp:hover{
+    background-color: rgb(54, 54, 54);
+    transition: 0.5s;
+}
+#bytte_knapp:hover{
+    background-color: rgb(0, 0, 0);
+}

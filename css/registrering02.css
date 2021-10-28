@@ -1,0 +1,85 @@
+main{
+height: 590px;
+}
+
+#video_bilde{
+    position: fixed;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+footer{
+background-color: rgba(0, 0, 0, 0.3);
+}
+
+#border, #border_med_feilMelding{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgb(54, 54, 54);
+    background: rgba(209, 209, 209, 0.5);
+    margin: auto;
+    top: 70px;
+}
+#border_med_feilMelding{
+    height: 460px;
+}
+
+#inputer{
+    margin: 20px 0 0 20px;
+}
+#knapper{
+    margin: 20px 0 0 20px;
+}
+
+.label, .innData{
+    display: list-item;
+    list-style: none;
+
+}
+
+.label{
+    font-weight: bold;
+}
+
+.innData, #submit_knapp{
+    margin-bottom: 10px;
+    width: 250px;
+    padding: 2px 5px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgb(54, 54, 54);
+
+}
+#i{
+    margin-bottom: 10px;
+}
+
+
+#submit_knapp{
+    background-color: rgb(30, 126, 10);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    float: right;
+    margin-right: 15px;
+
+}
+#submit_knapp:hover{
+    background-color: rgb(54, 54, 54);
+    transition: 0.5s;
+}
+
+
+@media screen and (min-width: 700px) {
+    #border, #border_med_feilMelding{
+        top: 150px;
+    }
+
+}
